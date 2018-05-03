@@ -12,7 +12,6 @@
 		<semantic:titleHeading>
 			<Title text="{i18n>worklistTitle}" />
 		</semantic:titleHeading>
-
 		<semantic:content>
 			<Table
 				id="table"
@@ -22,66 +21,6 @@
 					sorter: {
 						path: 'ProductID',
 						descending: false
-<<<<<<< HEAD
-					},
-					parameters: {
-						expand: 'ToSupplier'
-					}
-				}"
-				noDataText="{worklistView>/tableNoDataText}"
-				busyIndicatorDelay="{worklistView>/tableBusyDelay}"
-				growing="true"
-				growingScrollToLoad="true"
-				updateFinished="onUpdateFinished">
-
-				<headerToolbar>
-					<Toolbar>
-						<Title id="tableHeader" text="{worklistView>/worklistTableTitle}"/>
-						<ToolbarSpacer />
-						<SearchField
-							id="searchField"
-							tooltip="{i18n>worklistSearchTooltip}"
-							search="onSearch"
-							width="auto">
-						</SearchField>
-					</Toolbar>
-				</headerToolbar>
-
-				<columns>
-					<Column id="nameColumn">
-						<Text text="{i18n>tableNameColumnTitle}" id="nameColumnTitle"/>
-					</Column>
-					<Column 
-					id="supplierNameColumn"
-						demandPopin="true"
-						minScreenWidth="Tablet">
-						<Text text="{i18n>tableSupplierColumnTitle}"/>
-					</Column>
-					<Column id="webAddressColumn"
-						demandPopin="false"
-						minScreenWidth="Tablet">
-						<Text text="{i18n>tableSupplierWebAddressColumnTitle}"/>
-					</Column>
-					<Column id="unitNumberColumn" hAlign="End">
-						<Text text="{i18n>tableUnitNumberColumnTitle}" id="unitNumberColumnTitle"/>
-					</Column>
-				</columns>
-
-				<items>
-					<ColumnListItem
-						type="Navigation"
-						press="onPress">
-						<cells>
-							<ObjectIdentifier
-								title="{ProductID}"
-								text="{Name}"/>
-								<Text text="{SupplierName}"/>
-								<Link
-								text="{ToSupplier/WebAddress}"
-								href="{ToSupplier/WebAddress}"
-								target="_blank"/>
-
-=======
 					}
 				}"
 				noDataText="{worklistView>/tableNoDataText}"
@@ -119,7 +58,6 @@
 						<cells>
 							<ObjectIdentifier
 								title="{ProductID}"/>
->>>>>>> 553fe125a0f6f329d0f712965db230d8e842b529
 							<ObjectNumber
 								number="{
 									path: 'Price',
