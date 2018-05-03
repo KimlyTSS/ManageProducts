@@ -12,7 +12,11 @@
     "excludedFiles": [
       "test.html"
     ],
+<<<<<<< HEAD
     "buildRequired": true,
+=======
+    "buildRequired": false,
+>>>>>>> 553fe125a0f6f329d0f712965db230d8e842b529
     "lastBuildDateTime": "Fri, 27 Apr 2018 12:42:33 GMT"
   },
   "dataBinding": {

@@ -9,6 +9,10 @@ mock_preview_sapui5.html
 fioriHtmlRunner.html
 .*/fioriHtmlRunner.html
 visual_ext_index.html
+<<<<<<< HEAD
 /webapp/visual_ext_index.html
 .user.project.json
 dist
+=======
+/webapp/visual_ext_index.html
+>>>>>>> 553fe125a0f6f329d0f712965db230d8e842b529

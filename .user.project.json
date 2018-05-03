@@ -1,6 +1,7 @@
 {
   "run": [
     {
+<<<<<<< HEAD
       "filePath": "/ManageProducts/webapp/index.html",
       "previewMode": 0,
       "dataMode": 1,
@@ -54,6 +55,61 @@
         "runnerId": "webapprunner",
         "displayName": "App (Mock Server)",
         "lastRunTimeStamp": 1524835531131
+=======
+      "filePath": "/ManageProducts/webapp/test/mockServer.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "_metadata": {
+        "id": "2169435",
+        "runnerId": "webapprunner",
+        "displayName": "App (Mock Server)",
+        "lastRunTimeStamp": 1524832418699
+      }
+    },
+    {
+      "filePath": "/ManageProducts/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "_metadata": {
+        "id": "3160462",
+        "runnerId": "webapprunner",
+        "displayName": "App",
+        "lastRunTimeStamp": 1524831477273
+>>>>>>> 553fe125a0f6f329d0f712965db230d8e842b529
       }
     },
     {
