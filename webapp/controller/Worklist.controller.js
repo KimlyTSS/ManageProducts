@@ -10,6 +10,12 @@ sap.ui.define([
 		return BaseController.extend("opensap.manageproducts.controller.Worklist", {
 
 			formatter: formatter,
+			
+			_mFilters: {
+				cheap: [new sap.ui.model.Filter("Price", "LT", 100)],
+				moderate: [new sap.ui.model.Filter("Price", "BT", 100, 1000)],
+				expensive: [new sap.ui.model.Filter("Price", "GT", 1000)]
+			},
 
 			/* =========================================================== */
 			/* lifecycle methods                                           */
@@ -54,6 +60,23 @@ sap.ui.define([
 			/* =========================================================== */
 			/* event handlers                                              */
 			/* =========================================================== */
+
+			/**
+			 * Event handler when a filter tab gets pressed
+			 * @param {sap.ui.base.Event} oEvent the filter tab event
+			 * @public
+			 */
+			onQuickFilter: function(oEvent) {
+				var sKey = oEvent.getParameter("key"),
+					oFilter = this._mFilters[sKey],
+					oTable = this.byId("table"),
+					oBinding = oTable.getBinding("items");
+				if (oFilter) {
+					oBinding.filter(oFilter);
+				} else {
+					oBinding.filter([]);	
+				}
+			},
 
 			/**
 			 * Triggered by the table's 'updateFinished' event: after new table

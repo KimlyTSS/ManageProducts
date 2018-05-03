@@ -2,7 +2,7 @@
   "run": [
     {
       "filePath": "/ManageProducts/webapp/index.html",
-      "previewMode": 0,
+      "previewMode": 1,
       "dataMode": 1,
       "workspace": "withoutWorkspace",
       "urlParameters": [
@@ -25,7 +25,7 @@
         "id": "3160462",
         "runnerId": "webapprunner",
         "displayName": "App",
-        "lastRunTimeStamp": 1525345668525
+        "lastRunTimeStamp": 1525353192181
       }
     },
     {

@@ -10,15 +10,11 @@
 		toggleHeaderOnTitleClick="false"
 		busy="{objectView>/busy}"
 		busyIndicatorDelay="{objectView>/delay}">
-
 		<semantic:titleHeading>
 			<Title text="{ProductID}" />
 		</semantic:titleHeading>
-
 		<semantic:headerContent>
 			<ObjectHeader
-			id="objectHeader"
-			title="{ProductID}"
 				number="{
 					path: 'Price',
 					formatter: '.formatter.numberUnit'
@@ -28,20 +24,12 @@
 					<ObjectAttribute text="{Name}"/>
 				</attributes>
 			</ObjectHeader>
-			<ObjectNumber
-				number="{
-					path: 'Price',
-					formatter: '.formatter.numberUnit'
-				}"
-				numberUnit="{CurrencyCode}"
 			/>
 		</semantic:headerContent>
 
 		<semantic:sendEmailAction>
 			<semantic:SendEmailAction id="shareEmail" press="onShareEmailPress"/>
 		</semantic:sendEmailAction>
-
-
 	</semantic:SemanticPage>
 
 </mvc:View>
