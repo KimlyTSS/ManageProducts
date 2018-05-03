@@ -27,23 +27,23 @@
 						key="cheap"
 						icon="sap-icon://waiver"
 						iconColor="Positive"
+						count="{worklistView>/cheap}"
 						text="{i18n>worklistFilterCheap}"/>
 					<IconTabFilter
 						key="moderate"
 						icon="sap-icon://loan"
 						iconColor="Critical"
+						count="{worklistView>/moderate}"
 						text="{i18n>worklistFilterModerate}"/>
 					<IconTabFilter
 						key="expensive"
 						icon="sap-icon://money-bills"
 						iconColor="Negative"
+						count="{worklistView>/expensive}"
 						text="{i18n>worklistFilterExpensive}"/>
 				</items>
 				<content>
-					<!-- put the existing table here -->
-				</content>
-			</IconTabBar> 
-			<Table
+						<Table
 				id="table"
 				width="auto"
 				items="{
@@ -116,6 +116,8 @@
 					</ColumnListItem>
 				</items>
 			</Table>
+				</content>
+			</IconTabBar> 
 		</semantic:content>
 
 		<semantic:sendEmailAction>

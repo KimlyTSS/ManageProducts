@@ -44,7 +44,10 @@ sap.ui.define([
 					shareSendEmailSubject: this.getResourceBundle().getText("shareSendEmailWorklistSubject"),
 					shareSendEmailMessage: this.getResourceBundle().getText("shareSendEmailWorklistMessage", [location.href]),
 					tableNoDataText : this.getResourceBundle().getText("tableNoDataText"),
-					tableBusyDelay : 0
+					tableBusyDelay : 0,
+					cheap: 0,
+					moderate: 0,
+					expensive: 0
 				});
 				this.setModel(oViewModel, "worklistView");
 
@@ -91,11 +94,23 @@ sap.ui.define([
 				// update the worklist's object counter after the table update
 				var sTitle,
 					oTable = oEvent.getSource(),
+					oModel = this.getModel(),
+					oViewModel = this.getModel("worklistView"),
 					iTotalItems = oEvent.getParameter("total");
 				// only update the counter if the length is final and
 				// the table is not empty
 				if (iTotalItems && oTable.getBinding("items").isLengthFinal()) {
 					sTitle = this.getResourceBundle().getText("worklistTableTitleCount", [iTotalItems]);
+					// iterate the filters and request the count from the server
+					jQuery.each(this._mFilters, function (sFilterKey, oFilter) {
+						oModel.read("/ProductSet/$count", {
+												filters: oFilter,
+							success: function (oData) {
+								var sPath = "/" + sFilterKey;
+								oViewModel.setProperty(sPath, oData);
+							}
+						});
+					});
 				} else {
 					sTitle = this.getResourceBundle().getText("worklistTableTitle");
 				}
