@@ -7,8 +7,8 @@
       "workspace": "withoutWorkspace",
       "urlParameters": [
         {
-          "paramName": "",
-          "paramValue": "",
+          "paramName": "sap-language",
+          "paramValue": "EN",
           "paramActive": false
         },
         {
@@ -25,7 +25,7 @@
         "id": "3160462",
         "runnerId": "webapprunner",
         "displayName": "App",
-        "lastRunTimeStamp": 1526037002171
+        "lastRunTimeStamp": 1526041831082
       }
     },
     {

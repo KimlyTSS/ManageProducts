@@ -68,6 +68,9 @@
 			},
 			"": {
 				"dataSource": "mainService",
+				"settings": {
+				"defaultBindingMode": "TwoWay"
+				},
 				"preload": true
 			}
 		},
@@ -99,7 +102,13 @@
 					"target": [
 						"object"
 					]
+				},
+				{
+					"pattern" : "AddProduct",
+					"name" : "add",
+					"target" : "add"
 				}
+
 			],
 			"targets": {
 				"worklist": {
@@ -113,6 +122,11 @@
 					"viewId": "object",
 					"viewLevel": 2,
 					"title": "{i18n>objectViewTitle}"
+				},
+				"add": {
+					"viewName": "Add",
+					"viewId": "add",
+					"viewLevel": 3
 				},
 				"objectNotFound": {
 					"viewName": "ObjectNotFound",
