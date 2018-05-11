@@ -1,6 +1,34 @@
 {
   "run": [
     {
+      "filePath": "/ManageProducts/webapp/index.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "urlParameters": [
+        {
+          "paramName": "sap-language",
+          "paramValue": "EN",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "hashParameter": "",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "_metadata": {
+        "id": "3160462",
+        "runnerId": "webapprunner",
+        "displayName": "App",
+        "lastRunTimeStamp": 1526047506873
+      }
+    },
+    {
       "filePath": "/ManageProducts/webapp/test/integration/opaTests.qunit.html",
       "previewMode": 1,
       "dataMode": 1,
@@ -53,34 +81,6 @@
         "runnerId": "webapprunner",
         "displayName": "Unit Tests",
         "lastRunTimeStamp": 1526044874572
-      }
-    },
-    {
-      "filePath": "/ManageProducts/webapp/index.html",
-      "previewMode": 1,
-      "dataMode": 1,
-      "workspace": "withoutWorkspace",
-      "urlParameters": [
-        {
-          "paramName": "sap-language",
-          "paramValue": "EN",
-          "paramActive": false
-        },
-        {
-          "paramName": "",
-          "paramValue": "",
-          "paramActive": false
-        }
-      ],
-      "hashParameter": "",
-      "ui5ActiveVersion": "snapshot",
-      "ui5VerSource": null,
-      "isDefaultVersion": 1,
-      "_metadata": {
-        "id": "3160462",
-        "runnerId": "webapprunner",
-        "displayName": "App",
-        "lastRunTimeStamp": 1526041831082
       }
     },
     {

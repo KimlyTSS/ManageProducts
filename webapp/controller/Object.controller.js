@@ -3,12 +3,14 @@ sap.ui.define([
 		"opensap/manageproducts/controller/BaseController",
 		"sap/ui/model/json/JSONModel",
 		"sap/ui/core/routing/History",
-		"opensap/manageproducts/model/formatter"
+		"opensap/manageproducts/model/formatter",
+		"sap/m/MessageToast"
 	], function (
 		BaseController,
 		JSONModel,
 		History,
-		formatter
+		formatter,
+    	MessageToast
 	) {
 		"use strict";
 
@@ -50,6 +52,11 @@ sap.ui.define([
 			/* event handlers                                              */
 			/* =========================================================== */
 
+			onRatingChanged: function(oEvent) {
+				var iValue = oEvent.getParameter("value"),
+					sMessage = this.getResourceBundle().getText("productRatingSuccess", [iValue]);
+							MessageToast.show(sMessage);
+			},
 
 			/**
 			 * Event handler  for navigating back.
