@@ -17,7 +17,7 @@
 					"odataVersion": "2.0",
 					"localUri": "localService/metadata.xml"
 				}
-			}
+		}
 		},
 		"sourceTemplate": {
 			"id": "sap.ui.ui5-template-plugin.1worklist",
