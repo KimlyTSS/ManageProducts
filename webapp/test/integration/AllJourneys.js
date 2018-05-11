@@ -9,6 +9,7 @@ sap.ui.require([
 	"sap/ui/test/Opa5",
 	"opensap/manageproducts/test/integration/pages/Common",
 	"sap/ui/test/opaQunit",
+	"opensap/manageproducts/test/integration/pages/NewProduct",
 	"opensap/manageproducts/test/integration/pages/Worklist",
 	"opensap/manageproducts/test/integration/pages/Object",
 	"opensap/manageproducts/test/integration/pages/NotFound",

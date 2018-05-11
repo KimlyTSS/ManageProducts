@@ -2,12 +2,21 @@
 
 sap.ui.define([
 	"sap/ui/test/opaQunit"
-], function (opaTest) {
+], function(opaTest) {
 	"use strict";
 
 	QUnit.module("Object");
 
-	opaTest("Should see the busy indicator on object view after metadata is loaded", function (Given, When, Then) {
+	opaTest("Should see the 'New Product' view after pressing the 'Add' button", function(Given, When, Then) {
+		// Arrangements
+		Given.iStartMyApp();
+		//Actions
+		When.onTheWorklistPage.iWaitUntilTheTableIsLoaded().and.iPressAdd();
+		//Assertions
+		Then.onTheNewProductPage.iShouldSeeThePage().and.iTeardownMyAppFrame();
+	});
+
+	opaTest("Should see the busy indicator on object view after metadata is loaded", function(Given, When, Then) {
 		// Arrangements
 		Given.iStartMyApp();
 

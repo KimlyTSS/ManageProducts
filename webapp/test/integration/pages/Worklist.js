@@ -12,6 +12,7 @@ sap.ui.define([
 
 		var sViewName = "Worklist",
 			sTableId = "table",
+			sAddButtonId = "addButton",
 			sSearchFieldId = "searchField",
 			sSomethingThatCannotBeFound = "*#-Q@@||";
 
@@ -166,6 +167,15 @@ sap.ui.define([
 
 					iSearchForSomethingWithNoResults : function () {
 						return this.iSearchForValueWithActions([new EnterText({text: sSomethingThatCannotBeFound}), new Press()]);
+					},
+					
+					iPressAdd : function () {
+						return this.waitFor({
+						id: sAddButtonId,
+						viewName : sViewName,
+						actions : new Press(),
+						errorMessage : "Add button not found"
+						});
 					}
 
 				}, shareOptions.createActions(sViewName)),
