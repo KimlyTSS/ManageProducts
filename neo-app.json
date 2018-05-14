@@ -21,26 +21,6 @@
       "description": "SAPUI5 Test Resources"
     },
     {
-      "path": "/resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/resources",
-        "version": "1.52.7"
-      },
-      "description": "SAPUI5 Resources"
-    },
-    {
-      "path": "/test-resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/test-resources",
-        "version": "1.52.7"
-      },
-      "description": "SAPUI5 Test Resources"
-    },
-    {
       "path": "/ES5",
       "target": {
         "type": "destination",
