@@ -46,7 +46,7 @@
 						text="{i18n>worklistFilterExpensive}"/>
 				</items>
 				<content>
-						<Table
+				<Table
 				id="table"
 				width="auto"
 				items="{

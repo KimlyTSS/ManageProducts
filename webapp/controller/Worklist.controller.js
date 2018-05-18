@@ -17,10 +17,6 @@ sap.ui.define([
 				expensive: [new sap.ui.model.Filter("Price", "GT", 1000)]
 			},
 
-			/* =========================================================== */
-			/* lifecycle methods                                           */
-			/* =========================================================== */
-
 			/**
 			 * Called when the worklist controller is instantiated.
 			 * @public
