@@ -26,9 +26,11 @@ sap.ui.define([
 		/* =========================================================== */
 		
 		
+		
+		
 		// *************************** https://stackoverflow.com/questions/33438838/sapui5-file-upload ********************************
 		
-		var oFileUploader = _this.byId("fileUploader");
+	/*	var oFileUploader = _this.byId("fileUploader");
 		oFileUploader.addHeaderParameter(new sap.ui.unified.FileUploaderParameter({
 			name: "slug",
 			value: oFileUploader.getValue()
@@ -37,8 +39,10 @@ sap.ui.define([
 			name: "x-csrf-token",
 			value: _this.oDataModel.getSecurityToken()
 			}));
-		oFileUploader.upload();
+		oFileUploader.upload();*/
 		
+		
+		//**************
 		
 		// ************* https://blogs.sap.com/2016/11/08/step-by-step-on-how-to-use-the-sapui5-file-upload-feature/ *******************
 		

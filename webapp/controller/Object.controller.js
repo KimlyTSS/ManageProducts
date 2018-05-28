@@ -5,13 +5,7 @@ sap.ui.define([
 		"sap/ui/core/routing/History",
 		"opensap/manageproducts/model/formatter",
 		"sap/m/MessageToast"
-	], function (
-		BaseController,
-		JSONModel,
-		History,
-		formatter,
-    	MessageToast
-	) {
+	], function (BaseController, JSONModel, History, formatter, MessageToast) {
 		"use strict";
 
 		return BaseController.extend("opensap.manageproducts.controller.Object", {

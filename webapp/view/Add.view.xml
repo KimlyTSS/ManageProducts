@@ -2,9 +2,11 @@
 	xmlns:smartfield="sap.ui.comp.smartfield" xmlns:smartform="sap.ui.comp.smartform" xmlns="sap.m" xmlns:fileupload="sap.ui.unified">
 	<semantic:FullscreenPage id="page" title="{i18n>addPageTitle}" showNavButton="true" navButtonPress="onNavBack">
 		<semantic:content>
-			<fileupload:FileUploader id="fileUploader" width="70%" uploadUrl="" placeholder="Add attachment" uploadOnChange="false"
-				uploadComplete="handleUploadComplete" change="handleValueChange" typeMissmatch="handleTypeMissmatch" 
-				style="Emphasized" useMultipart="false"></fileupload:FileUploader>
+			<VBox>
+					<fileupload:FileUploader id="idfileUploader" typeMissmatch="handleTypeMissmatch" change="handleValueChange" maximumFileSize="10" fileSizeExceed="handleFileSize" maximumFilenameLength="50" filenameLengthExceed="handleFileNameLength" multiple="false" width="50%" 
+					sameFilenameAllowed="false" buttonText="Browse" fileType="CSV" style="Emphasized" placeholder="Choose a file"
+    				text="Upload your file" press="onUpload" type="Emphasized"></fileupload:FileUploader>
+			</VBox>
 			<smartform:SmartForm id="form" editable="true" title="{i18n>formTitle}" class="sapUiResponsiveMargin">
 				<smartform:Group id="formGroup" label="{i18n>formGroupLabel}">
 					<smartform:GroupElement>

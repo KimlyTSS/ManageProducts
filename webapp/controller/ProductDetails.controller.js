@@ -9,8 +9,8 @@ sap.ui.define([
 			formatter: formatter,
 		
 			onInit: function() {
-				this.byId("categoryLabel").setVisible(false);
-				this.byId("category").setVisible(false);
+				this.byId("categoryLabel").setVisible(true);
+				this.byId("category").setVisible(true);
 			}
 		});
 			

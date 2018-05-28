@@ -186,10 +186,6 @@ sap.ui.define([
 			},
 			
 
-			/* =========================================================== */
-			/* internal methods                                            */
-			/* =========================================================== */
-
 			_getPopover : function () {
 			// create dialog lazily
 				if (!this._oPopover) {
