@@ -73,7 +73,7 @@ sap.ui.define([
 						}));
 					},
 
-					iPressOnMoreData : function (){
+					iPressOnMoreData : function () {
 						return this.waitFor({
 							id : sTableId,
 							viewName : sViewName,
