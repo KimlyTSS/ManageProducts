@@ -1,5 +1,5 @@
-<mvc:View controllerName="opensap.manageproducts.controller.Worklist" xmlns="sap.m" xmlns:fu="sap.ui.unified:FileUploader"
-	xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" xmlns:l="sap.ui.layout">
+<mvc:View controllerName="opensap.manageproducts.controller.Worklist" xmlns="sap.m" 
+	xmlns:mvc="sap.ui.core.mvc" xmlns:semantic="sap.f.semantic" xmlns:l="sap.ui.layout" xmlns:fileupload="sap.ui.unified">
 	<semantic:SemanticPage id="page" headerPinnable="true" toggleHeaderOnTitleClick="true">
 		<semantic:titleHeading>
 			<Title text="{i18n>worklistViewTitle}"/>
@@ -26,9 +26,22 @@
 								<ToolbarSpacer/>
 								<SearchField id="searchField" 
 								tooltip="{i18n>worklistSearchTooltip}" search="onSearch" width="auto"></SearchField>
+								<ToolbarSpacer/>
+								<Label text="Planning sequence name" required="true"></Label>
+								<Input id="PlanningSequence" width="50%" placeholder="Enter the sequence name"></Input>
+								<ToolbarSpacer/>
+								<Label text="File" required="true"></Label>
+									<fileupload:FileUploader id="fileUploader" typeMissmatch="handleTypeMissmatch" 
+									change="handleValueChange" maximumFileSize="10" fileSizeExceed="handleFileSize" 
+									maximumFilenameLength="50" filenameLengthExceed="handleFileNameLength" multiple="false" width="50%" 
+									sameFilenameAllowed="false" buttonText="Browse" fileType="txt" style="Emphasized" 
+									placeholder="Choose a file"
+				    				text="Upload your file" press="onUpload" type="Emphasized">
+									</fileupload:FileUploader>
+								<Button text="Upload" type="Accept" icon="sap-icon://upload" press="onUpload"></Button>
 								<Button id="addButton" icon="sap-icon://add" press="onAdd"/>
-								<!-- Button für Aufruf des File Upload -->
-								<!-- <Button id="addUploadButton" icon="sap-icon://add" press="onAdd"/> -->
+								<!-- Button für Aufruf des File Upload 
+								<Button id="addUploadButton" icon="sap-icon://add-document" press="onFileUpload"/> -->
 							</Toolbar>
 						</headerToolbar>
 						<columns>

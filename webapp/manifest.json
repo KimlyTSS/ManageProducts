@@ -107,6 +107,11 @@
 					"pattern" : "AddProduct",
 					"name" : "add",
 					"target" : "add"
+				},
+				{
+					"pattern" : "FileUpload",
+					"name" : "fileUpload",
+					"target" : "fileUpload"
 				}
 
 			],
@@ -125,7 +130,11 @@
 				},
 				"add": {
 					"viewName": "Add",
-					"viewId": "add",
+					"viewId": "add"
+				},
+				"fileUpload" : {
+					"viewName" : "FileUpload",
+					"viewId" : "fileUpload",
 					"viewLevel": 3
 				},
 				"objectNotFound": {
