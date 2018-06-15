@@ -25,34 +25,7 @@
         "id": "3160462",
         "runnerId": "webapprunner",
         "displayName": "App",
-        "lastRunTimeStamp": 1528457286234
-      }
-    },
-    {
-      "filePath": "/ManageProducts/webapp/test/unit/unitTests.qunit.html",
-      "previewMode": 1,
-      "dataMode": 1,
-      "workspace": "withoutWorkspace",
-      "ui5ActiveVersion": "snapshot",
-      "ui5VerSource": null,
-      "isDefaultVersion": 1,
-      "urlParameters": [
-        {
-          "paramName": "",
-          "paramValue": "",
-          "paramActive": false
-        },
-        {
-          "paramName": "",
-          "paramValue": "",
-          "paramActive": false
-        }
-      ],
-      "_metadata": {
-        "id": "2023251",
-        "runnerId": "webapprunner",
-        "displayName": "Unit Tests",
-        "lastRunTimeStamp": 1528457271040
+        "lastRunTimeStamp": 1529066868523
       }
     },
     {
@@ -80,7 +53,34 @@
         "id": "7592668",
         "runnerId": "webapprunner",
         "displayName": "OPA Tests",
-        "lastRunTimeStamp": 1526045876528
+        "lastRunTimeStamp": 1529066863212
+      }
+    },
+    {
+      "filePath": "/ManageProducts/webapp/test/unit/unitTests.qunit.html",
+      "previewMode": 1,
+      "dataMode": 1,
+      "workspace": "withoutWorkspace",
+      "ui5ActiveVersion": "snapshot",
+      "ui5VerSource": null,
+      "isDefaultVersion": 1,
+      "urlParameters": [
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        },
+        {
+          "paramName": "",
+          "paramValue": "",
+          "paramActive": false
+        }
+      ],
+      "_metadata": {
+        "id": "2023251",
+        "runnerId": "webapprunner",
+        "displayName": "Unit Tests",
+        "lastRunTimeStamp": 1528457271040
       }
     },
     {
